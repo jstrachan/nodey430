@@ -1,0 +1,103 @@
+
+Showing logs for build [32mjstrachan-nodey430-master-cddgk-4[0m stage [32mfrom-build-pack[0m and container [32mstep-credential-initializer-s8g6r[0m
+{"level":"warn","ts":1583916812.2057567,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/0.8.0-**-support-backwards-incompats\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1583916812.2067952,"logger":"fallback-logger","caller":"creds-init/main.go:40","msg":"Credentials initialized."}
+
+Showing logs for build [32mjstrachan-nodey430-master-cddgk-4[0m stage [32mfrom-build-pack[0m and container [32mstep-working-dir-initializer-5pcwg[0m
+{"level":"warn","ts":1583916813.7762341,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
+{"level":"info","ts":1583916813.7806277,"logger":"fallback-logger","caller":"bash/main.go:64","msg":"Successfully executed command \"sh -c mkdir -p /workspace/source\"; output "}
+
+Showing logs for build [32mjstrachan-nodey430-master-cddgk-4[0m stage [32mfrom-build-pack[0m and container [32mstep-place-tools[0m
+
+Showing logs for build [32mjstrachan-nodey430-master-cddgk-4[0m stage [32mfrom-build-pack[0m and container [32mstep-git-source-jstrachan-nodey430-master-cddgk-brkjh[0m
+{"level":"warn","ts":1583916822.8963983,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/0.8.0-**-support-backwards-incompats\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1583916825.274427,"logger":"fallback-logger","caller":"git/git.go:103","msg":"Successfully cloned https://github.com/*********/nodey430.git @ v0.0.4 in path /workspace/source"}
+
+Showing logs for build [32mjstrachan-nodey430-master-cddgk-4[0m stage [32mfrom-build-pack[0m and container [32mstep-git-merge[0m
+Using SHAs from PULL_REFS=master:
+WARNING: no SHAs to merge, falling back to initial cloned commit
+
+Showing logs for build [32mjstrachan-nodey430-master-cddgk-4[0m stage [32mfrom-build-pack[0m and container [32mstep-setup-jx-git-credentials[0m
+Generated Git credentials file /workspace/xdg_config/git/credentials
+
+Showing logs for build [32mjstrachan-nodey430-master-cddgk-4[0m stage [32mfrom-build-pack[0m and container [32mstep-build-npmrc[0m
+Command "credential" is deprecated, it will be removed on Jun 1 2020.  This is replaced by Tekton's mounted secrets
+WARNING: failed to find Secret npm-token in namespace **
+
+Showing logs for build [32mjstrachan-nodey430-master-cddgk-4[0m stage [32mfrom-build-pack[0m and container [32mstep-build-npm-install[0m
+npm notice created a lockfile as package-lock.json. You should commit this file.
+npm WARN REPLACE_ME@1.0.0 No repository field.
+npm WARN REPLACE_ME@1.0.0 No license field.
+
+up to date in 1.289s
+found 0 vulnerabilities
+
+
+Showing logs for build [32mjstrachan-nodey430-master-cddgk-4[0m stage [32mfrom-build-pack[0m and container [32mstep-build-npm-test[0m
+
+> REPLACE_ME@1.0.0 test /workspace/source
+> echo "no test specified" && exit 0
+
+no test specified
+
+Showing logs for build [32mjstrachan-nodey430-master-cddgk-4[0m stage [32mfrom-build-pack[0m and container [32mstep-build-container-build[0m
+[36mINFO[0m[0000] Downloading base image node:9-slim           
+2020/03/11 08:54:15 No matching credentials were found, falling back on anonymous
+[36mINFO[0m[0002] Error while retrieving image from cache: getting file info: stat /workspace/sha256:0e0175bbe4f8d9d104590d8d2c591017874e30977cb71aaff1cf6fa99479575c: no such file or directory 
+[36mINFO[0m[0002] Downloading base image node:9-slim           
+2020/03/11 08:54:17 No matching credentials were found, falling back on anonymous
+[36mINFO[0m[0003] Executing 0 build triggers                   
+[36mINFO[0m[0003] cmd: EXPOSE                                  
+[36mINFO[0m[0003] Adding exposed port: 8080/tcp                
+[36mINFO[0m[0003] Using files from context: [/workspace/source] 
+[36mINFO[0m[0003] Skipping unpacking as no commands require it. 
+[36mINFO[0m[0003] Taking snapshot of full filesystem...        
+[36mINFO[0m[0003] ENV PORT 8080                                
+[36mINFO[0m[0003] No files changed in this command, skipping snapshotting. 
+[36mINFO[0m[0003] EXPOSE 8080                                  
+[36mINFO[0m[0003] cmd: EXPOSE                                  
+[36mINFO[0m[0003] Adding exposed port: 8080/tcp                
+[36mINFO[0m[0003] No files changed in this command, skipping snapshotting. 
+[36mINFO[0m[0003] WORKDIR /usr/src/app                         
+[36mINFO[0m[0003] cmd: workdir                                 
+[36mINFO[0m[0003] Changed working directory to /usr/src/app    
+[36mINFO[0m[0003] Creating directory /usr/src/app              
+[36mINFO[0m[0003] Taking snapshot of files...                  
+[36mINFO[0m[0003] Using files from context: [/workspace/source] 
+[36mINFO[0m[0003] COPY . .                                     
+[36mINFO[0m[0003] Taking snapshot of files...                  
+[36mINFO[0m[0003] CMD ["npm", "start"]                         
+[36mINFO[0m[0003] No files changed in this command, skipping snapshotting. 
+2020/03/11 08:54:19 existing blob: sha256:196b8e3c919d5639193ba6c6e54774528942041bbc37606631a2250502985c3c
+2020/03/11 08:54:19 existing blob: sha256:5bba3ecb4cd6374a19da45f2a3db0a9c0804984358b3bb4b666c28944016e5ff
+2020/03/11 08:54:19 existing blob: sha256:e01bd28a434b56ffd2a3fe9aa99b9b69aecca69904843edd30b1ee7150d79904
+2020/03/11 08:54:19 existing blob: sha256:a88538b9cd05cfa611e43a25582a95ad7879f6fa708b0386a26b71ee62235bb3
+2020/03/11 08:54:19 existing blob: sha256:7d083412657baa2dafba8d093034ef26f9ed2c90fb6ed95f76bb55aff03ed429
+2020/03/11 08:54:20 pushed blob: sha256:30a3babf2b9fb774f2677b2fd6ca6b12027b1db09cf0cdb8916b2b2f0627f435
+2020/03/11 08:54:20 pushed blob: sha256:60cfbd64a131b13c7c06d06a0b0fe152b3ea44f67cfa72980e75f595d1f3e5f8
+2020/03/11 08:54:20 pushed blob: sha256:8b236dd9bbbd78f5ec9c6e5bc6e2d92896554cda3a9c1e05ca529d32eb2bbd47
+2020/03/11 08:54:20 192.168.1.64:5000/myproject/nodey430:0.0.4: digest: sha256:e45d7cd25b4cb9d8e9888802daab1c73ecccc03bf9b781b7897ac9f8def4f86d size: 1404
+
+Showing logs for build [32mjstrachan-nodey430-master-cddgk-4[0m stage [32mfrom-build-pack[0m and container [32mstep-build-post-build[0m
+no CVE provider running in the current ** namespace so skip adding image to be analysed
+
+Showing logs for build [32mjstrachan-nodey430-master-cddgk-4[0m stage [32mfrom-build-pack[0m and container [32mstep-promote-changelog[0m
+Converted /workspace/source/charts/nodey430 to an unshallow repository
+Generating change log from git ref d3f30a5b9e7e67b70fb514c5bd86b3a0f3992c7a => 140f2b710303c8b900a1a6fa9fa97bf768da37f0
+WARNING: No release found for *********/nodey430 and tag v0.0.4 so creating a new release
+Updated the release information at https://github.com/*********/nodey430/releases/tag/v0.0.4
+generated: /workspace/source/charts/nodey430/templates/release.yaml
+Created Release nodey430-0-0-4 resource in namespace **
+Updating PipelineActivity *********-nodey430-master-4 with version 0.0.4
+Updated PipelineActivities *********-nodey430-master-4 with release notes URL: https://github.com/*********/nodey430/releases/tag/v0.0.4
+
+Showing logs for build [32mjstrachan-nodey430-master-cddgk-4[0m stage [32mfrom-build-pack[0m and container [32mstep-promote-helm-release[0m
+Adding missing Helm repo: storage.googleapis.com https://storage.googleapis.com/chartmuseum.jenkins-x.io
+Successfully added Helm repository storage.googleapis.com.
+Adding missing Helm repo: bucketrepo http://bucketrepo/bucketrepo/charts/
+Successfully added Helm repository bucketrepo.
+Uploading chart file nodey430-0.0.4.tgz to http://bucketrepo/bucketrepo/charts/api/charts
+Received 500 response: Error when saving the file into cloud storage: open bucket gs://bucketrepo: google: could not find default credentials. See https://developers.google.com/accounts/docs/application-default-credentials for more information.
+error: Failed to post chart to http://bucketrepo/bucketrepo/charts/api/charts due to response 500: Error when saving the file into cloud storage: open bucket gs://bucketrepo: google: could not find default credentials. See https://developers.google.com/accounts/docs/application-default-credentials for more information.
+[31m
+Pipeline failed on stage 'from-build-pack' : container 'step-promote-helm-release'. The execution of the pipeline has stopped.[0m
