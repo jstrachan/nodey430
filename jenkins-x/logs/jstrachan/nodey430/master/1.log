@@ -1,105 +1,170 @@
 
-Showing logs for build [32mjstrachan-nodey430-master-q5h5d-1[0m stage [32mfrom-build-pack[0m and container [32mstep-credential-initializer-frgbv[0m
-{"level":"warn","ts":1583876403.5496638,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/0.8.0-**-support-backwards-incompats\" is not a valid GitHub commit ID"}
-{"level":"info","ts":1583876403.5501015,"logger":"fallback-logger","caller":"creds-init/main.go:40","msg":"Credentials initialized."}
+Showing logs for build [32mjstrachan-nodey430-master-mv7mb-1[0m stage [32mfrom-build-pack[0m and container [32mstep-credential-initializer-qfccx[0m
+{"level":"warn","ts":1583929033.9700859,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/0.8.0-**-support-backwards-incompats\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1583929033.9716723,"logger":"fallback-logger","caller":"creds-init/main.go:40","msg":"Credentials initialized."}
 
-Showing logs for build [32mjstrachan-nodey430-master-q5h5d-1[0m stage [32mfrom-build-pack[0m and container [32mstep-working-dir-initializer-fgql7[0m
-{"level":"warn","ts":1583876403.8659003,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
-{"level":"info","ts":1583876403.8674932,"logger":"fallback-logger","caller":"bash/main.go:64","msg":"Successfully executed command \"sh -c mkdir -p /workspace/source\"; output "}
+Showing logs for build [32mjstrachan-nodey430-master-mv7mb-1[0m stage [32mfrom-build-pack[0m and container [32mstep-working-dir-initializer-k9gd7[0m
+{"level":"warn","ts":1583929034.4488754,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
+{"level":"info","ts":1583929034.4516578,"logger":"fallback-logger","caller":"bash/main.go:64","msg":"Successfully executed command \"sh -c mkdir -p /workspace/source\"; output "}
 
-Showing logs for build [32mjstrachan-nodey430-master-q5h5d-1[0m stage [32mfrom-build-pack[0m and container [32mstep-place-tools[0m
+Showing logs for build [32mjstrachan-nodey430-master-mv7mb-1[0m stage [32mfrom-build-pack[0m and container [32mstep-place-tools[0m
 
-Showing logs for build [32mjstrachan-nodey430-master-q5h5d-1[0m stage [32mfrom-build-pack[0m and container [32mstep-git-source-jstrachan-nodey430-master-q5h5d-ptmtx[0m
-{"level":"warn","ts":1583876958.801313,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/0.8.0-**-support-backwards-incompats\" is not a valid GitHub commit ID"}
-{"level":"info","ts":1583876960.187535,"logger":"fallback-logger","caller":"git/git.go:103","msg":"Successfully cloned https://github.com/*********/nodey430.git @ v0.0.1 in path /workspace/source"}
+Showing logs for build [32mjstrachan-nodey430-master-mv7mb-1[0m stage [32mfrom-build-pack[0m and container [32mstep-git-source-jstrachan-nodey430-master-mv7mb-rzt5r[0m
+{"level":"warn","ts":1583929889.5555694,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/0.8.0-**-support-backwards-incompats\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1583929895.6384122,"logger":"fallback-logger","caller":"git/git.go:103","msg":"Successfully cloned https://github.com/*********/nodey430.git @ v0.0.6 in path /workspace/source"}
 
-Showing logs for build [32mjstrachan-nodey430-master-q5h5d-1[0m stage [32mfrom-build-pack[0m and container [32mstep-git-merge[0m
+Showing logs for build [32mjstrachan-nodey430-master-mv7mb-1[0m stage [32mfrom-build-pack[0m and container [32mstep-git-merge[0m
 Using SHAs from PULL_REFS=master:
 WARNING: no SHAs to merge, falling back to initial cloned commit
 
-Showing logs for build [32mjstrachan-nodey430-master-q5h5d-1[0m stage [32mfrom-build-pack[0m and container [32mstep-setup-jx-git-credentials[0m
+Showing logs for build [32mjstrachan-nodey430-master-mv7mb-1[0m stage [32mfrom-build-pack[0m and container [32mstep-setup-jx-git-credentials[0m
 Generated Git credentials file /workspace/xdg_config/git/credentials
 
-Showing logs for build [32mjstrachan-nodey430-master-q5h5d-1[0m stage [32mfrom-build-pack[0m and container [32mstep-build-npmrc[0m
+Showing logs for build [32mjstrachan-nodey430-master-mv7mb-1[0m stage [32mfrom-build-pack[0m and container [32mstep-build-npmrc[0m
 Command "credential" is deprecated, it will be removed on Jun 1 2020.  This is replaced by Tekton's mounted secrets
 WARNING: failed to find Secret npm-token in namespace **
 
-Showing logs for build [32mjstrachan-nodey430-master-q5h5d-1[0m stage [32mfrom-build-pack[0m and container [32mstep-build-npm-install[0m
+Showing logs for build [32mjstrachan-nodey430-master-mv7mb-1[0m stage [32mfrom-build-pack[0m and container [32mstep-build-npm-install[0m
 npm notice created a lockfile as package-lock.json. You should commit this file.
 npm WARN REPLACE_ME@1.0.0 No repository field.
 npm WARN REPLACE_ME@1.0.0 No license field.
 
-up to date in 1.155s
+up to date in 16.514s
 found 0 vulnerabilities
 
 
-Showing logs for build [32mjstrachan-nodey430-master-q5h5d-1[0m stage [32mfrom-build-pack[0m and container [32mstep-build-npm-test[0m
+Showing logs for build [32mjstrachan-nodey430-master-mv7mb-1[0m stage [32mfrom-build-pack[0m and container [32mstep-build-npm-test[0m
 
 > REPLACE_ME@1.0.0 test /workspace/source
 > echo "no test specified" && exit 0
 
 no test specified
 
-Showing logs for build [32mjstrachan-nodey430-master-q5h5d-1[0m stage [32mfrom-build-pack[0m and container [32mstep-build-container-build[0m
-[36mINFO[0m[0000] Downloading base image node:9-slim           
-2020/03/10 21:49:25 No matching credentials were found, falling back on anonymous
-[36mINFO[0m[0001] Error while retrieving image from cache: getting file info: stat /workspace/sha256:0e0175bbe4f8d9d104590d8d2c591017874e30977cb71aaff1cf6fa99479575c: no such file or directory 
-[36mINFO[0m[0001] Downloading base image node:9-slim           
-2020/03/10 21:49:27 No matching credentials were found, falling back on anonymous
-[36mINFO[0m[0002] Executing 0 build triggers                   
-[36mINFO[0m[0002] cmd: EXPOSE                                  
-[36mINFO[0m[0002] Adding exposed port: 8080/tcp                
-[36mINFO[0m[0002] Using files from context: [/workspace/source] 
-[36mINFO[0m[0002] Skipping unpacking as no commands require it. 
-[36mINFO[0m[0002] Taking snapshot of full filesystem...        
-[36mINFO[0m[0002] ENV PORT 8080                                
-[36mINFO[0m[0002] No files changed in this command, skipping snapshotting. 
-[36mINFO[0m[0002] EXPOSE 8080                                  
-[36mINFO[0m[0002] cmd: EXPOSE                                  
-[36mINFO[0m[0002] Adding exposed port: 8080/tcp                
-[36mINFO[0m[0002] No files changed in this command, skipping snapshotting. 
-[36mINFO[0m[0002] WORKDIR /usr/src/app                         
-[36mINFO[0m[0002] cmd: workdir                                 
-[36mINFO[0m[0002] Changed working directory to /usr/src/app    
-[36mINFO[0m[0002] Creating directory /usr/src/app              
-[36mINFO[0m[0002] Taking snapshot of files...                  
-[36mINFO[0m[0002] Using files from context: [/workspace/source] 
-[36mINFO[0m[0002] COPY . .                                     
-[36mINFO[0m[0002] Taking snapshot of files...                  
-[36mINFO[0m[0002] CMD ["npm", "start"]                         
-[36mINFO[0m[0002] No files changed in this command, skipping snapshotting. 
-2020/03/10 21:49:28 pushed blob: sha256:ecc568f6432dc6aadbf73fb5d0e9f7f8c877cbbd57706a49c4851a741563d1cc
-2020/03/10 21:49:28 pushed blob: sha256:069f23ad58e6b2dbc30c169f052171e68d851f207d985a12e16cba96fb0ad229
-2020/03/10 21:49:29 pushed blob: sha256:b5c952c956ab120269526af28b8374eb60b06345fee25ba18bf0e9c302188083
-2020/03/10 21:49:29 pushed blob: sha256:7d083412657baa2dafba8d093034ef26f9ed2c90fb6ed95f76bb55aff03ed429
-2020/03/10 21:49:29 pushed blob: sha256:196b8e3c919d5639193ba6c6e54774528942041bbc37606631a2250502985c3c
-2020/03/10 21:49:31 pushed blob: sha256:e01bd28a434b56ffd2a3fe9aa99b9b69aecca69904843edd30b1ee7150d79904
-2020/03/10 21:50:04 pushed blob: sha256:5bba3ecb4cd6374a19da45f2a3db0a9c0804984358b3bb4b666c28944016e5ff
-2020/03/10 21:50:06 pushed blob: sha256:a88538b9cd05cfa611e43a25582a95ad7879f6fa708b0386a26b71ee62235bb3
-2020/03/10 21:50:06 192.168.1.64:5000/myproject/nodey430:0.0.1: digest: sha256:d784ab5823fb647173a7096468bb1f31b9c4c5371cf044df100a81f8bb6f04a5 size: 1404
+Showing logs for build [32mjstrachan-nodey430-master-mv7mb-1[0m stage [32mfrom-build-pack[0m and container [32mstep-build-container-build[0m
+[36mINFO[0m[0008] Downloading base image node:9-slim           
+2020/03/11 12:33:25 No matching credentials were found, falling back on anonymous
+[36mINFO[0m[0022] Error while retrieving image from cache: getting file info: stat /workspace/sha256:0e0175bbe4f8d9d104590d8d2c591017874e30977cb71aaff1cf6fa99479575c: no such file or directory 
+[36mINFO[0m[0022] Downloading base image node:9-slim           
+2020/03/11 12:33:38 No matching credentials were found, falling back on anonymous
+[36mINFO[0m[0038] Executing 0 build triggers                   
+[36mINFO[0m[0038] cmd: EXPOSE                                  
+[36mINFO[0m[0038] Adding exposed port: 8080/tcp                
+[36mINFO[0m[0038] Using files from context: [/workspace/source] 
+[36mINFO[0m[0043] Skipping unpacking as no commands require it. 
+[36mINFO[0m[0043] Taking snapshot of full filesystem...        
+[36mINFO[0m[0046] ENV PORT 8080                                
+[36mINFO[0m[0046] No files changed in this command, skipping snapshotting. 
+[36mINFO[0m[0046] EXPOSE 8080                                  
+[36mINFO[0m[0046] cmd: EXPOSE                                  
+[36mINFO[0m[0046] Adding exposed port: 8080/tcp                
+[36mINFO[0m[0046] No files changed in this command, skipping snapshotting. 
+[36mINFO[0m[0046] WORKDIR /usr/src/app                         
+[36mINFO[0m[0046] cmd: workdir                                 
+[36mINFO[0m[0046] Changed working directory to /usr/src/app    
+[36mINFO[0m[0046] Creating directory /usr/src/app              
+[36mINFO[0m[0046] Taking snapshot of files...                  
+[36mINFO[0m[0047] Using files from context: [/workspace/source] 
+[36mINFO[0m[0047] COPY . .                                     
+[36mINFO[0m[0049] Taking snapshot of files...                  
+[36mINFO[0m[0049] CMD ["npm", "start"]                         
+[36mINFO[0m[0049] No files changed in this command, skipping snapshotting. 
+2020/03/11 12:34:09 existing blob: sha256:7d083412657baa2dafba8d093034ef26f9ed2c90fb6ed95f76bb55aff03ed429
+2020/03/11 12:34:09 existing blob: sha256:196b8e3c919d5639193ba6c6e54774528942041bbc37606631a2250502985c3c
+2020/03/11 12:34:09 existing blob: sha256:e01bd28a434b56ffd2a3fe9aa99b9b69aecca69904843edd30b1ee7150d79904
+2020/03/11 12:34:11 existing blob: sha256:a88538b9cd05cfa611e43a25582a95ad7879f6fa708b0386a26b71ee62235bb3
+2020/03/11 12:34:11 existing blob: sha256:5bba3ecb4cd6374a19da45f2a3db0a9c0804984358b3bb4b666c28944016e5ff
+2020/03/11 12:34:14 pushed blob: sha256:f4c47d0b7e58e0858a4e7945e245d94a89204f75f2b0648893fcdff511d388cb
+2020/03/11 12:34:14 pushed blob: sha256:677036a90bafc92334751ce2f374374f19a10173920ed8f5792d7acfc52385a1
+2020/03/11 12:34:14 pushed blob: sha256:ad8cff5e706c66c409ed450e510085adb6f50adeb432244c768b4931ab8e8ba4
+2020/03/11 12:34:14 192.168.1.64:5000/myproject/nodey430:0.0.6: digest: sha256:ebb5f1bf5a2b1d68c7bceb93fadb03b8f724312a2a7dca25106e1ab5dcd02f59 size: 1404
 
-Showing logs for build [32mjstrachan-nodey430-master-q5h5d-1[0m stage [32mfrom-build-pack[0m and container [32mstep-build-post-build[0m
+Showing logs for build [32mjstrachan-nodey430-master-mv7mb-1[0m stage [32mfrom-build-pack[0m and container [32mstep-build-post-build[0m
 no CVE provider running in the current ** namespace so skip adding image to be analysed
 
-Showing logs for build [32mjstrachan-nodey430-master-q5h5d-1[0m stage [32mfrom-build-pack[0m and container [32mstep-promote-changelog[0m
+Showing logs for build [32mjstrachan-nodey430-master-mv7mb-1[0m stage [32mfrom-build-pack[0m and container [32mstep-promote-changelog[0m
+Error creating pipelineactivities.jenkins.io: Post https://10.96.0.1:443/apis/apiextensions.k8s.io/v1beta1/customresourcedefinitions: dial tcp 10.96.0.1:443: connect: connection refused
+Error creating pipelineactivities.jenkins.io: Post https://10.96.0.1:443/apis/apiextensions.k8s.io/v1beta1/customresourcedefinitions: dial tcp 10.96.0.1:443: connect: connection refused
+Error creating pipelineactivities.jenkins.io: Post https://10.96.0.1:443/apis/apiextensions.k8s.io/v1beta1/customresourcedefinitions: dial tcp 10.96.0.1:443: connect: connection refused
+Error creating pipelineactivities.jenkins.io: Post https://10.96.0.1:443/apis/apiextensions.k8s.io/v1beta1/customresourcedefinitions: dial tcp 10.96.0.1:443: connect: connection refused
+Error creating pipelineactivities.jenkins.io: Post https://10.96.0.1:443/apis/apiextensions.k8s.io/v1beta1/customresourcedefinitions: dial tcp 10.96.0.1:443: connect: connection refused
+Error creating pipelineactivities.jenkins.io: Post https://10.96.0.1:443/apis/apiextensions.k8s.io/v1beta1/customresourcedefinitions: dial tcp 10.96.0.1:443: connect: connection refused
+Error creating pipelineactivities.jenkins.io: Post https://10.96.0.1:443/apis/apiextensions.k8s.io/v1beta1/customresourcedefinitions: dial tcp 10.96.0.1:443: connect: connection refused
+Error creating pipelineactivities.jenkins.io: Post https://10.96.0.1:443/apis/apiextensions.k8s.io/v1beta1/customresourcedefinitions: dial tcp 10.96.0.1:443: connect: connection refused
+Error creating pipelineactivities.jenkins.io: Post https://10.96.0.1:443/apis/apiextensions.k8s.io/v1beta1/customresourcedefinitions: dial tcp 10.96.0.1:443: connect: connection refused
+Error creating pipelineactivities.jenkins.io: Post https://10.96.0.1:443/apis/apiextensions.k8s.io/v1beta1/customresourcedefinitions: dial tcp 10.96.0.1:443: connect: connection refused
 Converted /workspace/source/charts/nodey430 to an unshallow repository
-Generating change log from git ref 541d9a4404ed31367a3b5a27c283d0576e4d2336 => c86627fe22e88a54b9c1676a03a85c534cf6fbe6
-Associating user x-0 in users.jenkins.io with email james.strachan@gmail.com to git GitProvider user with login -0 as emails match
-Adding label jenkins.io/git-github-userid=-0 to user x-0 in users.jenkins.io
-WARNING: Failed to enrich commit 85cf4f20494905a6fc237359bd128ad64d729b3f with issues: User.jenkins.io "x-0" is invalid: metadata.labels: Invalid value: "-0": a valid label must be an empty string or consist of alphanumeric characters, '-', '_' or '.', and must start and end with an alphanumeric character (e.g. 'MyValue',  or 'my_value',  or '12345', regex used for validation is '(([A-Za-z0-9][-A-Za-z0-9_.]*)?[A-Za-z0-9])?')
-Finding issues in commit messages using git format
-WARNING: No release found for *********/nodey430 and tag v0.0.1 so creating a new release
-Updated the release information at https://github.com/*********/nodey430/releases/tag/v0.0.1
+Generating change log from git ref 398eff5d60a276222c76150923832fa7e0f11e3d => fd362cfc3b8ee135c680db90329cb45e48fbd0b3
+WARNING: No release found for *********/nodey430 and tag v0.0.6 so creating a new release
+Updated the release information at https://github.com/*********/nodey430/releases/tag/v0.0.6
 generated: /workspace/source/charts/nodey430/templates/release.yaml
-Created Release nodey430-0-0-1 resource in namespace **
-Updating PipelineActivity *********-nodey430-master-1 with version 0.0.1
-Updated PipelineActivities *********-nodey430-master-1 with release notes URL: https://github.com/*********/nodey430/releases/tag/v0.0.1
+Created Release nodey430-0-0-6 resource in namespace **
+Updating PipelineActivity *********-nodey430-master-1 with version 0.0.6
+Updated PipelineActivities *********-nodey430-master-1 with release notes URL: https://github.com/*********/nodey430/releases/tag/v0.0.6
 
-Showing logs for build [32mjstrachan-nodey430-master-q5h5d-1[0m stage [32mfrom-build-pack[0m and container [32mstep-promote-helm-release[0m
-WARNING: No $CHART_REPOSITORY defined so using the default value of: http://jenkins-x-chartmuseum:8080
+Showing logs for build [32mjstrachan-nodey430-master-mv7mb-1[0m stage [32mfrom-build-pack[0m and container [32mstep-promote-helm-release[0m
 Adding missing Helm repo: storage.googleapis.com https://storage.googleapis.com/chartmuseum.jenkins-x.io
 Successfully added Helm repository storage.googleapis.com.
-Adding missing Helm repo: jenkins-x-chartmuseum http://jenkins-x-chartmuseum:8080
-error: failed to build dependencies for chart from directory '.': failed to add chart repositories: failed to add the Helm repository with URL 'http://jenkins-x-chartmuseum:8080': prompting for creds for http://jenkins-x-chartmuseum:8080: checking status code of http://jenkins-x-chartmuseum:8080/index.yaml: Get http://jenkins-x-chartmuseum:8080/index.yaml: dial tcp: lookup jenkins-x-chartmuseum on 10.96.0.10:53: no such host
-[31m
-Pipeline failed on stage 'from-build-pack' : container 'step-promote-helm-release'. The execution of the pipeline has stopped.[0m
+Adding missing Helm repo: bucketrepo http://bucketrepo/bucketrepo/charts/
+Successfully added Helm repository bucketrepo.
+Uploading chart file nodey430-0.0.6.tgz to http://bucketrepo/bucketrepo/charts/api/charts
+Received 200 response: 
+
+Showing logs for build [32mjstrachan-nodey430-master-mv7mb-1[0m stage [32mfrom-build-pack[0m and container [32mstep-promote-jx-promote[0m
+WARNING: prow based install so skip waiting for the merge of Pull Requests to go green as currently there is an issue with gettingstatuses from the PR, see https://github.com/jenkins-x/**/issues/2410
+WARNING: No $CHART_REPOSITORY defined so using the default value of: http://jenkins-x-chartmuseum:8080
+Promoting app nodey430 version 0.0.6 to namespace **-staging
+WARNING: 
+Created Pull Request: https://github.com/*********/environment-kind-staging/pull/2
+Added label updatebot to Pull Request https://github.com/*********/environment-kind-staging/pull/2
+WARNING: Failed to query the Pull Request last commit status for https://github.com/*********/environment-kind-staging/pull/2 ref 41fff4056f00d80e15f2b222f62279c0d99825eb Could not find a status for repository *********/environment-kind-staging with ref 41fff4056f00d80e15f2b222f62279c0d99825eb
+WARNING: Failed to query the Pull Request last commit status for https://github.com/*********/environment-kind-staging/pull/2 ref 41fff4056f00d80e15f2b222f62279c0d99825eb Could not find a status for repository *********/environment-kind-staging with ref 41fff4056f00d80e15f2b222f62279c0d99825eb
+WARNING: Failed to query the Pull Request last commit status for https://github.com/*********/environment-kind-staging/pull/2 ref 41fff4056f00d80e15f2b222f62279c0d99825eb Could not find a status for repository *********/environment-kind-staging with ref 41fff4056f00d80e15f2b222f62279c0d99825eb
+WARNING: Failed to query the Pull Request last commit status for https://github.com/*********/environment-kind-staging/pull/2 ref 41fff4056f00d80e15f2b222f62279c0d99825eb Could not find a status for repository *********/environment-kind-staging with ref 41fff4056f00d80e15f2b222f62279c0d99825eb
+WARNING: Failed to query the Pull Request last commit status for https://github.com/*********/environment-kind-staging/pull/2 ref 41fff4056f00d80e15f2b222f62279c0d99825eb Could not find a status for repository *********/environment-kind-staging with ref 41fff4056f00d80e15f2b222f62279c0d99825eb
+WARNING: Failed to query the Pull Request last commit status for https://github.com/*********/environment-kind-staging/pull/2 ref 41fff4056f00d80e15f2b222f62279c0d99825eb Could not find a status for repository *********/environment-kind-staging with ref 41fff4056f00d80e15f2b222f62279c0d99825eb
+WARNING: Failed to query the Pull Request last commit status for https://github.com/*********/environment-kind-staging/pull/2 ref 41fff4056f00d80e15f2b222f62279c0d99825eb Could not find a status for repository *********/environment-kind-staging with ref 41fff4056f00d80e15f2b222f62279c0d99825eb
+WARNING: Failed to query the Pull Request last commit status for https://github.com/*********/environment-kind-staging/pull/2 ref 41fff4056f00d80e15f2b222f62279c0d99825eb Could not find a status for repository *********/environment-kind-staging with ref 41fff4056f00d80e15f2b222f62279c0d99825eb
+WARNING: Failed to query the Pull Request last commit status for https://github.com/*********/environment-kind-staging/pull/2 ref 41fff4056f00d80e15f2b222f62279c0d99825eb Could not find a status for repository *********/environment-kind-staging with ref 41fff4056f00d80e15f2b222f62279c0d99825eb
+WARNING: Failed to query the Pull Request last commit status for https://github.com/*********/environment-kind-staging/pull/2 ref 41fff4056f00d80e15f2b222f62279c0d99825eb Could not find a status for repository *********/environment-kind-staging with ref 41fff4056f00d80e15f2b222f62279c0d99825eb
+WARNING: Failed to query the Pull Request last commit status for https://github.com/*********/environment-kind-staging/pull/2 ref 41fff4056f00d80e15f2b222f62279c0d99825eb Could not find a status for repository *********/environment-kind-staging with ref 41fff4056f00d80e15f2b222f62279c0d99825eb
+WARNING: Failed to query the Pull Request last commit status for https://github.com/*********/environment-kind-staging/pull/2 ref 41fff4056f00d80e15f2b222f62279c0d99825eb Could not find a status for repository *********/environment-kind-staging with ref 41fff4056f00d80e15f2b222f62279c0d99825eb
+WARNING: Failed to query the Pull Request last commit status for https://github.com/*********/environment-kind-staging/pull/2 ref 41fff4056f00d80e15f2b222f62279c0d99825eb Could not find a status for repository *********/environment-kind-staging with ref 41fff4056f00d80e15f2b222f62279c0d99825eb
+WARNING: Failed to query the Pull Request last commit status for https://github.com/*********/environment-kind-staging/pull/2 ref 41fff4056f00d80e15f2b222f62279c0d99825eb Could not find a status for repository *********/environment-kind-staging with ref 41fff4056f00d80e15f2b222f62279c0d99825eb
+WARNING: Failed to query the Pull Request last commit status for https://github.com/*********/environment-kind-staging/pull/2 ref 41fff4056f00d80e15f2b222f62279c0d99825eb Could not find a status for repository *********/environment-kind-staging with ref 41fff4056f00d80e15f2b222f62279c0d99825eb
+WARNING: Failed to query the Pull Request last commit status for https://github.com/*********/environment-kind-staging/pull/2 ref 41fff4056f00d80e15f2b222f62279c0d99825eb Could not find a status for repository *********/environment-kind-staging with ref 41fff4056f00d80e15f2b222f62279c0d99825eb
+WARNING: Failed to query the Pull Request last commit status for https://github.com/*********/environment-kind-staging/pull/2 ref 41fff4056f00d80e15f2b222f62279c0d99825eb Could not find a status for repository *********/environment-kind-staging with ref 41fff4056f00d80e15f2b222f62279c0d99825eb
+WARNING: Failed to query the Pull Request last commit status for https://github.com/*********/environment-kind-staging/pull/2 ref 41fff4056f00d80e15f2b222f62279c0d99825eb Could not find a status for repository *********/environment-kind-staging with ref 41fff4056f00d80e15f2b222f62279c0d99825eb
+WARNING: Failed to query the Pull Request last commit status for https://github.com/*********/environment-kind-staging/pull/2 ref 41fff4056f00d80e15f2b222f62279c0d99825eb Could not find a status for repository *********/environment-kind-staging with ref 41fff4056f00d80e15f2b222f62279c0d99825eb
+WARNING: Failed to query the Pull Request last commit status for https://github.com/*********/environment-kind-staging/pull/2 ref 41fff4056f00d80e15f2b222f62279c0d99825eb Could not find a status for repository *********/environment-kind-staging with ref 41fff4056f00d80e15f2b222f62279c0d99825eb
+WARNING: Failed to query the Pull Request last commit status for https://github.com/*********/environment-kind-staging/pull/2 ref 41fff4056f00d80e15f2b222f62279c0d99825eb Could not find a status for repository *********/environment-kind-staging with ref 41fff4056f00d80e15f2b222f62279c0d99825eb
+WARNING: Failed to query the Pull Request last commit status for https://github.com/*********/environment-kind-staging/pull/2 ref 41fff4056f00d80e15f2b222f62279c0d99825eb Could not find a status for repository *********/environment-kind-staging with ref 41fff4056f00d80e15f2b222f62279c0d99825eb
+WARNING: Failed to query the Pull Request last commit status for https://github.com/*********/environment-kind-staging/pull/2 ref 41fff4056f00d80e15f2b222f62279c0d99825eb Could not find a status for repository *********/environment-kind-staging with ref 41fff4056f00d80e15f2b222f62279c0d99825eb
+WARNING: Failed to query the Pull Request last commit status for https://github.com/*********/environment-kind-staging/pull/2 ref 41fff4056f00d80e15f2b222f62279c0d99825eb Could not find a status for repository *********/environment-kind-staging with ref 41fff4056f00d80e15f2b222f62279c0d99825eb
+WARNING: Failed to query the Pull Request last commit status for https://github.com/*********/environment-kind-staging/pull/2 ref 41fff4056f00d80e15f2b222f62279c0d99825eb Could not find a status for repository *********/environment-kind-staging with ref 41fff4056f00d80e15f2b222f62279c0d99825eb
+WARNING: Failed to query the Pull Request last commit status for https://github.com/*********/environment-kind-staging/pull/2 ref 41fff4056f00d80e15f2b222f62279c0d99825eb Could not find a status for repository *********/environment-kind-staging with ref 41fff4056f00d80e15f2b222f62279c0d99825eb
+WARNING: Failed to query the Pull Request last commit status for https://github.com/*********/environment-kind-staging/pull/2 ref 41fff4056f00d80e15f2b222f62279c0d99825eb Could not find a status for repository *********/environment-kind-staging with ref 41fff4056f00d80e15f2b222f62279c0d99825eb
+WARNING: Failed to query the Pull Request last commit status for https://github.com/*********/environment-kind-staging/pull/2 ref 41fff4056f00d80e15f2b222f62279c0d99825eb Could not find a status for repository *********/environment-kind-staging with ref 41fff4056f00d80e15f2b222f62279c0d99825eb
+WARNING: Failed to query the Pull Request last commit status for https://github.com/*********/environment-kind-staging/pull/2 ref 41fff4056f00d80e15f2b222f62279c0d99825eb Could not find a status for repository *********/environment-kind-staging with ref 41fff4056f00d80e15f2b222f62279c0d99825eb
+WARNING: Failed to query the Pull Request last commit status for https://github.com/*********/environment-kind-staging/pull/2 ref 41fff4056f00d80e15f2b222f62279c0d99825eb Could not find a status for repository *********/environment-kind-staging with ref 41fff4056f00d80e15f2b222f62279c0d99825eb
+WARNING: Failed to query the Pull Request last commit status for https://github.com/*********/environment-kind-staging/pull/2 ref 41fff4056f00d80e15f2b222f62279c0d99825eb Could not find a status for repository *********/environment-kind-staging with ref 41fff4056f00d80e15f2b222f62279c0d99825eb
+WARNING: Failed to query the Pull Request last commit status for https://github.com/*********/environment-kind-staging/pull/2 ref 41fff4056f00d80e15f2b222f62279c0d99825eb Could not find a status for repository *********/environment-kind-staging with ref 41fff4056f00d80e15f2b222f62279c0d99825eb
+WARNING: Failed to query the Pull Request last commit status for https://github.com/*********/environment-kind-staging/pull/2 ref 41fff4056f00d80e15f2b222f62279c0d99825eb Could not find a status for repository *********/environment-kind-staging with ref 41fff4056f00d80e15f2b222f62279c0d99825eb
+WARNING: Failed to query the Pull Request last commit status for https://github.com/*********/environment-kind-staging/pull/2 ref 41fff4056f00d80e15f2b222f62279c0d99825eb Could not find a status for repository *********/environment-kind-staging with ref 41fff4056f00d80e15f2b222f62279c0d99825eb
+WARNING: Failed to query the Pull Request last commit status for https://github.com/*********/environment-kind-staging/pull/2 ref 41fff4056f00d80e15f2b222f62279c0d99825eb Could not find a status for repository *********/environment-kind-staging with ref 41fff4056f00d80e15f2b222f62279c0d99825eb
+WARNING: Failed to query the Pull Request last commit status for https://github.com/*********/environment-kind-staging/pull/2 ref 41fff4056f00d80e15f2b222f62279c0d99825eb Could not find a status for repository *********/environment-kind-staging with ref 41fff4056f00d80e15f2b222f62279c0d99825eb
+WARNING: Failed to query the Pull Request last commit status for https://github.com/*********/environment-kind-staging/pull/2 ref 41fff4056f00d80e15f2b222f62279c0d99825eb Could not find a status for repository *********/environment-kind-staging with ref 41fff4056f00d80e15f2b222f62279c0d99825eb
+WARNING: Failed to query the Pull Request last commit status for https://github.com/*********/environment-kind-staging/pull/2 ref 41fff4056f00d80e15f2b222f62279c0d99825eb Could not find a status for repository *********/environment-kind-staging with ref 41fff4056f00d80e15f2b222f62279c0d99825eb
+WARNING: Failed to query the Pull Request last commit status for https://github.com/*********/environment-kind-staging/pull/2 ref 41fff4056f00d80e15f2b222f62279c0d99825eb Could not find a status for repository *********/environment-kind-staging with ref 41fff4056f00d80e15f2b222f62279c0d99825eb
+WARNING: Failed to query the Pull Request last commit status for https://github.com/*********/environment-kind-staging/pull/2 ref 41fff4056f00d80e15f2b222f62279c0d99825eb Could not find a status for repository *********/environment-kind-staging with ref 41fff4056f00d80e15f2b222f62279c0d99825eb
+WARNING: Failed to query the Pull Request last commit status for https://github.com/*********/environment-kind-staging/pull/2 ref 41fff4056f00d80e15f2b222f62279c0d99825eb Could not find a status for repository *********/environment-kind-staging with ref 41fff4056f00d80e15f2b222f62279c0d99825eb
+WARNING: Failed to query the Pull Request last commit status for https://github.com/*********/environment-kind-staging/pull/2 ref 41fff4056f00d80e15f2b222f62279c0d99825eb Could not find a status for repository *********/environment-kind-staging with ref 41fff4056f00d80e15f2b222f62279c0d99825eb
+WARNING: Failed to query the Pull Request last commit status for https://github.com/*********/environment-kind-staging/pull/2 ref 41fff4056f00d80e15f2b222f62279c0d99825eb Could not find a status for repository *********/environment-kind-staging with ref 41fff4056f00d80e15f2b222f62279c0d99825eb
+WARNING: Failed to query the Pull Request last commit status for https://github.com/*********/environment-kind-staging/pull/2 ref 41fff4056f00d80e15f2b222f62279c0d99825eb Could not find a status for repository *********/environment-kind-staging with ref 41fff4056f00d80e15f2b222f62279c0d99825eb
+WARNING: Failed to query the Pull Request last commit status for https://github.com/*********/environment-kind-staging/pull/2 ref 41fff4056f00d80e15f2b222f62279c0d99825eb Could not find a status for repository *********/environment-kind-staging with ref 41fff4056f00d80e15f2b222f62279c0d99825eb
+WARNING: Failed to query the Pull Request last commit status for https://github.com/*********/environment-kind-staging/pull/2 ref 41fff4056f00d80e15f2b222f62279c0d99825eb Could not find a status for repository *********/environment-kind-staging with ref 41fff4056f00d80e15f2b222f62279c0d99825eb
+WARNING: Failed to query the Pull Request last commit status for https://github.com/*********/environment-kind-staging/pull/2 ref 41fff4056f00d80e15f2b222f62279c0d99825eb Could not find a status for repository *********/environment-kind-staging with ref 41fff4056f00d80e15f2b222f62279c0d99825eb
+WARNING: Failed to query the Pull Request last commit status for https://github.com/*********/environment-kind-staging/pull/2 ref 41fff4056f00d80e15f2b222f62279c0d99825eb Could not find a status for repository *********/environment-kind-staging with ref 41fff4056f00d80e15f2b222f62279c0d99825eb
+WARNING: Failed to query the Pull Request last commit status for https://github.com/*********/environment-kind-staging/pull/2 ref 41fff4056f00d80e15f2b222f62279c0d99825eb Could not find a status for repository *********/environment-kind-staging with ref 41fff4056f00d80e15f2b222f62279c0d99825eb
+Pull Request https://github.com/*********/environment-kind-staging/pull/2 is merged at sha 80d99fd243675340b5b3531c189a71b8df4045b4
+Pull Request merged but we are not waiting for the update pipeline to complete!
+WARNING: Could not find the service URL in namespace **-staging for names nodey430, **-nodey430, **-staging-nodey430
